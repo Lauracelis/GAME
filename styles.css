@@ -1,8 +1,164 @@
+@fontface {
+    font-family: "game-play";
+    src:url('/assets/Gameplay.ttf');
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 :root{
+    --bg-color: rgb(15, 15, 15); /*background color*/
+}
+body{
+    background-color: var(--bg-color);
+}
+
+ .form_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
+.victims_title{
+    color: #00EBDB;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "game-play" ;
+    margin-left: 15rem;
+}
+.container_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5vh 0vh;
+    width: 28rem;
+    height: 3rem;
+    margin-top: rem;
+    
+}
+.form_list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#inputPlayer{
+    letter-spacing: 2px;
+    width: 60rem;
+    height: 3rem;
+    border-bottom: rgb(255, 115, 0) solid 0.2rem;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+#addPlayer{
+    background-image: url(./img/2304567-f44336.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    
+    cursor: pointer;
+   
+}
+.gif{
+    background-image: url(/img/180px-Sprite_del_Perro_de_Duck_Hunt.gif);
+    background-size: contain;
+    margin-left: 17rem;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 80%;
+    background-color: transparent;
+    margin-left: -60rem;
+}
+
+.container_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+    font-size: 2rem;
+    color: #fff5f5;
+    padding-top: 6rem;
+   
+    
+}
+
+.container_players{
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    height: 70%;
+    overflow-y: scroll;
+    color: rgb(206, 12, 12);
+    border: #bbff5b 2px solid;
+    border-radius: 5px;
+}
+.list_of_players li{
+  width: 90%;
+  background-image: url(/img/subround_duck_red.png);
+  background-repeat: no-repeat;
+  
+}
+ .list_of_players i{
+   margin-left: 100px;
+    
+  }
+.item_list_player{ 
+    margin: 2vh 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.player_delete{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.player_name{
+    width: 85%;
+    position: relative;
+    padding-bottom: 0.9vh;
+    letter-spacing: 2px;
+}
+.btn_play {
+    background-image: url(./img/big_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    width: 20vh;
+    height: 8vh;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+    
+  }
+  h2{
+    z-index: 1;
+    margin-top: 2px;
+    margin-left: -4.5rem;
+  }
+  .btn_play:hover {
+    transition: 0.4s;
+    
+    border: none;
+    box-shadow: 0vh 5px 5px rgba(0, 0, 0, 0.329);
+    transform: scale(1.1);
+  }
+.h3{
+    color: #FFA347;
+} 
+
