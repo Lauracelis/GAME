@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+.imagname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img2{
+    width: 500px;
+}
+
+/*.gif{
+    background-image: url(img/7fae97b0d62464f833f75a7cce0a9902.gif);
+    background-size: cover;
+    background-color: transparent;
+  
+}
+/* imagenduck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+.gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgduck{
+    width: 250px;
+}
+
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 5rem;
+}
+
+footer p {
+    color: white;
+}
