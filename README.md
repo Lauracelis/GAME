@@ -43,7 +43,7 @@ gh repo clone Lauracelis/GAME
 
 ## Deployment 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+https://stunning-lollipop-049dd3.netlify.app/
 
 ## Built with 🛠️
 
