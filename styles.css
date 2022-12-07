@@ -14,33 +14,109 @@
 body{
     background-color: var(--bg-color);
 }
+embed{
+    width: 0;
+    height: 0;
+}
 
- .form_section{
+/*home*/
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ebdb;
+    font-size: 4rem;
+}
+.img2{
+    width: 500px;
+}
+.gif_duck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top:-2rem ;
+}
+img{
+    width: 25rem;
+}
+.button_next{
+    width: 100%;
+    height: 15rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top:-5rem ;
+margin-left: 2rem;
+
+}
+.button_next:hover{
+    transition: 0.4s;
+    
+    border: none;
+    box-shadow: 0vh 5px 5px rgba(155, 255, 151, 0.329);
+    transform: scale(1.1); 
+}
+.next{
+    width: 9rem;
+    height: 6em;
+border: none;
+background-color: transparent;
+background-image: url(./img/big_button.png);
+background-repeat: no-repeat;
+background-size: contain;
+cursor: pointer;
+}
+.next, h3:hover{
+color: #bbff5b;
+}
+h3{
+    z-index: 10;
+    color: white;
+    margin-right: 1.5rem;
+}
+footer{
+   display: flex;
+   justify-content: center;
+   height: 1rem;
+}
+.duck_white{
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+footer p {
+    color: white
+}
+/**************************List page*********************/
+.titlee{
+ color: #00EBDB;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 3rem;
+ margin-top: 3rem;
+} 
+.form_section{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     
 }
-.victims_title{
-    color: #00EBDB;
-    font-size: 4rem;
-    text-align: center;
-    letter-spacing: 2px;
-    font-family: "game-play" ;
-    margin-left: 15rem;
-}
+
 .container_input{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2.5vh 0vh;
-    width: 28rem;
-    height: 3rem;
-    margin-top: rem;
-    
+    width: 40rem;
+    margin-top: -29rem;
+    margin-left: 5rem;  
 }
 .form_list{
     width: 100%;
@@ -50,35 +126,38 @@ body{
 #inputPlayer{
     letter-spacing: 2px;
     width: 60rem;
-    height: 3rem;
-    border-bottom: rgb(255, 115, 0) solid 0.2rem;
+    border-bottom: #F44336 solid 0.2rem;
     background-color: transparent;
     border-top: none;
     border-left: none;
     border-right: none;
+    color: #fff5f5;
     
 }
 #addPlayer{
     background-image: url(./img/2304567-f44336.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 8rem;
+    width: 6rem;
     height: 3rem;
     background-color: transparent;
     border: none;
-    
     cursor: pointer;
    
 }
 .gif{
-    background-image: url(/img/180px-Sprite_del_Perro_de_Duck_Hunt.gif);
-    background-size: contain;
-    margin-left: 17rem;
+    display: flex;
+    flex-direction: row;
+    /*background-image: url(/img/180px-Sprite_del_Perro_de_Duck_Hunt.gif);*/
+    background-size: cover;
+    margin-left: 7rem;
     background-repeat: no-repeat;
-    width: 30%;
-    height: 80%;
+    width: 50%;
+    height: 20rem;
     background-color: transparent;
-    margin-left: -60rem;
+    margin-left: -40rem;
+    margin-top: 6rem;
+
 }
 
 .container_list{
@@ -86,36 +165,31 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
-    width: 90%;
-    font-size: 2rem;
     color: #fff5f5;
-    padding-top: 6rem;
-   
-    
+
+
 }
 
+
 .container_players{
-    margin-bottom: 8rem;
+
     display: flex;
     justify-content: center;
     width: 32rem;
-    height: 70%;
+    height: 20rem;
     overflow-y: scroll;
     color: rgb(206, 12, 12);
     border: #bbff5b 2px solid;
     border-radius: 5px;
+    margin-bottom: 8rem;
 }
 .list_of_players li{
-  width: 90%;
+  width: 80%;
   background-image: url(/img/subround_duck_red.png);
   background-repeat: no-repeat;
   
 }
- .list_of_players i{
-   margin-left: 100px;
-    
-  }
+
 .item_list_player{ 
     margin: 2vh 0;
     position: relative;
@@ -126,6 +200,7 @@ body{
 .player_delete{
     cursor: pointer;
     transition: 0.3s;
+    background-color: red;
 }
 .player_name{
     width: 85%;
@@ -144,12 +219,13 @@ body{
     cursor: pointer;
     transition: 0.4s;
     color: white;
+    margin-bottom: 10rem;
     
   }
   h2{
     z-index: 1;
     margin-top: 2px;
-    margin-left: -4.5rem;
+    margin-left: -3.5rem;
   }
   .btn_play:hover {
     transition: 0.4s;
@@ -158,7 +234,5 @@ body{
     box-shadow: 0vh 5px 5px rgba(0, 0, 0, 0.329);
     transform: scale(1.1);
   }
-.h3{
-    color: #FFA347;
-} 
+
 
