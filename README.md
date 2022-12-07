@@ -1,5 +1,5 @@
 
-# CODER HUNTS :baby_chick:
+# CODERS HUNT :baby_chick:
 ## _A FUN GAME INSPIRED BY THE FAMOUS DUCK HUNTS GAME_
 
 
