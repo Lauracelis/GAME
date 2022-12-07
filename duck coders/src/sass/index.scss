@@ -1,0 +1,28 @@
+@import 'loading';
+@import 'volumeControlPanel';
+@import 'mobiles';
+@import 'media';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	user-select: none;
+	background-color: dimgrey;
+	display: flex;
+	justify-content: center;
+	font-family: 'Teko', serif;
+}
+
+img {
+	display: none;
+}
+
+#canvas {
+	margin-top: 5px;
+	border: 2px solid black;
+	cursor: crosshair;
+}
