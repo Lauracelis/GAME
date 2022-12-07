@@ -1,7 +1,9 @@
-@fontface {
-    font-family: "game-play";
-    src:url('/assets/Gameplay.ttf');
-}
+/* @font-face {
+    font-family: "gameOver";
+    src:url('/assets/fonts/game_over.ttf');
+    
+} */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Russo+One&display=swap');;
 
 *{
     padding: 0;
@@ -25,7 +27,9 @@ embed{
     justify-content: center;
     align-items: center;
     color: #00ebdb;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-family: 'Russo One', sans-serif;
+    margin-top: -3rem;
 }
 .img2{
     width: 500px;
@@ -35,7 +39,7 @@ embed{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top:-2rem ;
+    margin-top:-8rem ;
 }
 img{
     width: 25rem;
@@ -53,9 +57,8 @@ margin-left: 2rem;
 }
 .button_next:hover{
     transition: 0.4s;
-    
     border: none;
-    box-shadow: 0vh 5px 5px rgba(155, 255, 151, 0.329);
+   
     transform: scale(1.1); 
 }
 .next{
@@ -68,18 +71,22 @@ background-repeat: no-repeat;
 background-size: contain;
 cursor: pointer;
 }
-.next, h3:hover{
+ h3:hover{
 color: #bbff5b;
+font-size: 2rem;
+margin-top:1.5rem;
 }
 h3{
     z-index: 10;
     color: white;
     margin-right: 1.5rem;
+    font-family: 'Russo One', sans-serif;
 }
 footer{
    display: flex;
    justify-content: center;
    height: 1rem;
+   margin-top: -3rem;
 }
 .duck_white{
     width: 1rem;
@@ -105,7 +112,7 @@ footer p {
  align-items: center;
  font-size: 3rem;
  margin-top: 3rem;
-
+ font-family: 'Russo One', sans-serif;
 } 
 .form_section{
     width: 100%;
@@ -238,6 +245,7 @@ footer p {
     margin-left: 12rem;
     margin-top: 2rem;
     
+    
 }
 .btn_play {
     text-align: center;
@@ -253,13 +261,19 @@ footer p {
   }
   h2{
     z-index: 1;
-    margin-top: 2px;
+    margin-top: 10px;
     margin-left: -3.5rem;
+    font-family: 'Russo One', sans-serif;
+    
+  }
+  h2:hover{
+    color: #ff2212;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   .button:hover {
     transition: 0.4s;
     border: none;
-    box-shadow: 0vh 5px 5px rgba(0, 0, 0, 0.329);
     transform: scale(1.1);
   }
 
