@@ -90,6 +90,13 @@ footer p {
     color: white
 }
 /**************************List page*********************/
+.bg{
+    background-image: url(/img/game_board_grasss.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-clip: border-box;
+    
+}
 .titlee{
  color: #00EBDB;
  display: flex;
@@ -98,14 +105,15 @@ footer p {
  align-items: center;
  font-size: 3rem;
  margin-top: 3rem;
+
 } 
 .form_section{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     
 }
 
@@ -113,19 +121,18 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2.5vh 0vh;
-    width: 40rem;
-    margin-top: -29rem;
-    margin-left: 5rem;  
+    width: 35rem; 
+    margin-top: -2rem; 
 }
 .form_list{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 #inputPlayer{
     letter-spacing: 2px;
-    width: 60rem;
+    width: 40rem;
     border-bottom: #F44336 solid 0.2rem;
     background-color: transparent;
     border-top: none;
@@ -147,79 +154,101 @@ footer p {
 }
 .gif{
     display: flex;
-    flex-direction: row;
-    /*background-image: url(/img/180px-Sprite_del_Perro_de_Duck_Hunt.gif);*/
-    background-size: cover;
+    flex-direction: column;
+    margin-right:48rem;
+    margin-top: -18rem;
+    
+}
+.gif img{
+    width: 19rem;
+}
+/* .gif{
     margin-left: 7rem;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 20rem;
-    background-color: transparent;
-    margin-left: -40rem;
-    margin-top: 6rem;
+    width: 8rem;
+    height: 10rem;
+    margin-right: -50rem;
+    
 
-}
+} */
+/* .gif img{
+    width: 10rem;
+    margin-left: 55rem;
+    margin-top: 18rem;
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 10rem;
+} */
 
 .container_list{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     color: #fff5f5;
-
-
 }
 
 
 .container_players{
-
     display: flex;
     justify-content: center;
-    width: 32rem;
+    align-items: center;
+    width: 30rem;
     height: 20rem;
     overflow-y: scroll;
     color: rgb(206, 12, 12);
     border: #bbff5b 2px solid;
+    backdrop-filter: blur(15px);
     border-radius: 5px;
-    margin-bottom: 8rem;
+    margin-top: 5rem;
 }
-.list_of_players li{
-  width: 80%;
+.list_of_players ul{
+  width: 70%;
   background-image: url(/img/subround_duck_red.png);
   background-repeat: no-repeat;
+  line-height: 3;
   
 }
 
 .item_list_player{ 
-    margin: 2vh 0;
+    margin: 1vh ;
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 .player_delete{
-    cursor: pointer;
     transition: 0.3s;
     background-color: red;
 }
 .player_name{
     width: 85%;
     position: relative;
-    padding-bottom: 0.9vh;
     letter-spacing: 2px;
 }
-.btn_play {
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(./img/big_button.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: transparent;
-    width: 20vh;
-    height: 8vh;
+    width: 20rem;
+    height: 5rem;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    
+}
+.btn_play {
+    text-align: center;
+    margin-left:-9rem;/**/
     border: none;
     cursor: pointer;
     transition: 0.4s;
-    color: white;
-    margin-bottom: 10rem;
+    color: rgb(177, 22, 22);
+    background-color: transparent;
+    width:6rem;
+    
     
   }
   h2{
@@ -227,9 +256,8 @@ footer p {
     margin-top: 2px;
     margin-left: -3.5rem;
   }
-  .btn_play:hover {
+  .button:hover {
     transition: 0.4s;
-    
     border: none;
     box-shadow: 0vh 5px 5px rgba(0, 0, 0, 0.329);
     transform: scale(1.1);
